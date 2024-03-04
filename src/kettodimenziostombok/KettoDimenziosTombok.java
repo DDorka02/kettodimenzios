@@ -57,20 +57,36 @@ public class KettoDimenziosTombok {
         int MERET=5;
         int [][] otostabla =new int [MERET+1][MERET+1]; 
 
+        
+        
+        
+        
         for (int sor = 0; sor <= MERET; sor++) {
             for (int oszl = 0; oszl <= MERET; oszl++) {
                 otostabla[sor][oszl] = sor*oszl;
             }
-        for (int sor = 0; sor <= MERET; sor++) {
+        for (sor = 0; sor <= MERET; sor++) {
             for (int oszl = 0; oszl <= MERET; oszl++) {
                 System.out.printf("%3d",otostabla[sor][oszl]);
             }
-            }
+        otostabla[0][0] = 0;
+        otostabla[0][1] = 1;
+        otostabla[0][2] =2;
+        otostabla[0][3] =3;
+        otostabla[0][4] =4;
+        otostabla[0][5] =5;
+        otostabla[1][0] =1;
+        otostabla[2][0] =2;
+        otostabla[3][0] =3;
+        otostabla[4][0] =4;
+        otostabla[5][0] =5;
+            
             System.out.println("");
         }
         System.out.println("");
         
-        
+        }
         
 }
 }
+
